@@ -1,0 +1,11 @@
+<header class="header">
+    <h1>todos</h1>
+    <input
+        type="text"
+        class="new-todo"
+        placeholder="What needs to be done?"
+        [formControl]="inputText"
+        (keyup.enter)="createTodo()"
+        autofocus
+    />
+</header>
